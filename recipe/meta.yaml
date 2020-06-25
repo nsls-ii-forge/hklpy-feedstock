@@ -36,10 +36,6 @@ test:
     - hkl.sample
     - hkl.util
 
-test:
-  imports:
-    - hkl
-
 about:
   home: https://github.com/bluesky/hklpy
   license: BSD-3-Clause
