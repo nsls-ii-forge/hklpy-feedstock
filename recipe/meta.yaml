@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -35,10 +35,6 @@ test:
     - hkl.engine
     - hkl.sample
     - hkl.util
-
-test:
-  imports:
-    - hkl
 
 about:
   home: https://github.com/bluesky/hklpy
