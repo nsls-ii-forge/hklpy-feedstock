@@ -1,0 +1,47 @@
+{% set name = "hklpy" %}
+{% set version = "0.3.14" %}
+{% set sha256 = "fce572fef897c78586977ae81d24c3c3d3792d0d5fac742021e0cd9067f035b2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - hkl
+    - numpy
+    - ophyd
+    - pygobject
+
+test:
+  imports:
+    - hkl
+    - hkl.calc
+    - hkl.context
+    - hkl.diffract
+    - hkl.engine
+    - hkl.sample
+    - hkl.util
+
+test:
+  imports:
+    - hkl
+
+about:
+  home: https://github.com/bluesky/hklpy
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Diffractometer computation library with ophyd pseudopositioner support
