@@ -5,11 +5,9 @@ Home: https://github.com/bluesky/hklpy
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/hklpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Diffractometer computation library with ophyd pseudopositioner support
-
-
 
 Current build status
 ====================
@@ -17,7 +15,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=&branchName=master">
+      <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=210&branchName=master">
         <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/hklpy-feedstock?branchName=master">
       </a>
     </td>
