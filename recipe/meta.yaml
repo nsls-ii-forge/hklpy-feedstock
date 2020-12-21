@@ -1,6 +1,6 @@
 {% set name = "hklpy" %}
-{% set version = "0.3.14" %}
-{% set sha256 = "fce572fef897c78586977ae81d24c3c3d3792d0d5fac742021e0cd9067f035b2" %}
+{% set version = "0.3.15" %}
+{% set sha256 = "7d752d7ac04e58a00ebf71acd66733c88442a2833843611181b1da4d271c427f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -24,6 +24,7 @@ requirements:
     - hkl
     - numpy
     - ophyd
+    - pint
     - pygobject
 
 test:
