@@ -1,6 +1,6 @@
 {% set name = "hklpy" %}
-{% set version = "0.3.15" %}
-{% set sha256 = "7d752d7ac04e58a00ebf71acd66733c88442a2833843611181b1da4d271c427f" %}
+{% set version = "0.3.16" %}
+{% set sha256 = "bf3d0488bbe7f71d1d75ae791b871715dd311c3c3791510e5cc0a8cb063c6777" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [py<36 or win or osx]
+  skip: true  # [py<36 or win or osx]
 
 requirements:
   host:
@@ -26,6 +26,7 @@ requirements:
     - ophyd
     - pint
     - pygobject
+    - pyresttable
 
 test:
   imports:
