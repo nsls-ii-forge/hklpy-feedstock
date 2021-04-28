@@ -26,6 +26,7 @@ requirements:
     - ophyd
     - pint
     - pygobject
+    - pyresttable
 
 test:
   imports:
