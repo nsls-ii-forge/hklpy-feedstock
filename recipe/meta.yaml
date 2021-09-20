@@ -1,6 +1,6 @@
 {% set name = "hklpy" %}
-{% set version = "0.3.16" %}
-{% set sha256 = "bf3d0488bbe7f71d1d75ae791b871715dd311c3c3791510e5cc0a8cb063c6777" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "2903950ef31cfe4505c40aa49064f51716468c944589bc9360950e999eaf5d1e" %}
 
 package:
   name: {{ name|lower }}
